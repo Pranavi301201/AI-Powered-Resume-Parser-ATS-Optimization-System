@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | RESUMEAI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo-section">
+
+            <img src="{{ url_for('static', filename='images/weblogo.png') }}" class="logo">
+
+            <h1>RESUMEAI</h1>
+
+        </div>
+
+        <ul class="nav-links">
+
+                           <li><a href="/home">Home</a></li>
+
+                <li><a href="/contact">Contact</a></li>
+
+            <li><a href="/dashboard">Dashboard</a></li>
+
+            <li><a href="/logout">Logout</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Main Section -->
+
+    <section class="dashboard-section">
+
+        <!-- Welcome Card -->
+
+        <div class="welcome-card">
+
+            <h2>
+                Welcome, {{ fullname }}
+            </h2>
+
+            <p>
+                Upload resumes and analyze ATS scores
+                using Artificial Intelligence & NLP.
+            </p>
+
+        </div>
+
+        <!-- Upload Card -->
+
+        <div class="upload-card">
+
+            <h3>Upload Resume</h3>
+
+            <form action="/upload_resume"
+                  method="POST"
+                  enctype="multipart/form-data">
+
+                <div class="file-upload">
+
+    <input type="file"
+           id="resume"
+           name="resume"
+           required
+           onchange="showFileName()">
+
+    <span id="file-name">
+        No file selected
+    </span>
+<textarea
+    name="job_description"
+    placeholder="Paste Job Description Here..."
+    required></textarea>
+</div>
+                <button type="submit">
+                    Upload Resume
+                </button>
+
+            </form>
+
+        </div>
+<div class="recruiter-btn">
+
+    <a href="/recruiter">
+
+        Recruiter Resume Ranking →
+
+    </a>
+
+</div>
+    </section>
+<script>
+
+function showFileName(){
+
+    let input = document.getElementById("resume");
+
+    let fileName = input.files[0].name;
+
+    document.getElementById("file-name").innerText = fileName;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | RESUMEAI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo-section">
+
+                <img src="{{ url_for('static', filename='images/weblogo.png') }}" class="logo">
+
+                <h1>RESUMEAI</h1>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="/">Home</a></li>
+
+                <li><a href="/contact">Contact</a></li>
+
+                <li><a href="/login">Login</a></li>
+
+                <li><a href="/register">Sign Up</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Contact Section -->
+
+    <section class="contact-section">
+
+        <div class="contact-left">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                Have questions about RESUMEAI?
+                Reach out to us for support,
+                project collaboration, or ATS assistance.
+            </p>
+
+            <div class="contact-info">
+
+                <p><strong>Email:</strong> resumeai@gmail.com</p>
+
+                <p><strong>Phone:</strong> +91 8897177470</p>
+
+                <p><strong>Location:</strong> Srikakulam, India</p>
+
+            </div>
+
+        </div>
+
+        <!-- Form -->
+
+        <div class="contact-right">
+
+            <div class="contact-card">
+
+                <h3>Send Message</h3>
+
+                <form>
+
+                    <input type="text" placeholder="Your Name" required>
+
+                    <input type="email" placeholder="Your Email" required>
+
+                    <textarea placeholder="Your Message"></textarea>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

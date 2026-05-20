@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0000;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    height:100px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 70px;
+
+    background:black;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    width:85px;
+    margin-right:15px;
+}
+
+.logo-section h1{
+    color:#b87412;
+    font-size:32px;
+}
+
+/* Nav */
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-links li a:hover{
+    color:#b87412;
+}
+
+/* Main */
+
+.recruiter-section{
+    width:100%;
+    height:calc(100vh - 100px);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Card */
+
+.recruiter-card{
+    width:700px;
+
+    background:#1a0000;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 20px rgba(184,116,18,0.2);
+}
+
+.recruiter-card h2{
+    text-align:center;
+
+    color:#b87412;
+
+    font-size:40px;
+
+    margin-bottom:30px;
+}
+
+/* Textarea */
+
+textarea{
+    width:100%;
+
+    height:180px;
+
+    padding:18px;
+
+    margin-bottom:25px;
+
+    border:none;
+
+    border-radius:12px;
+
+    resize:none;
+
+    font-size:16px;
+}
+
+/* File */
+
+input[type="file"]{
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:25px;
+
+    background:white;
+
+    border-radius:10px;
+}
+
+/* Button */
+
+button{
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#b87412;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+}
+
+button:hover{
+    background:#f0c36a;
+
+    color:black;
+}

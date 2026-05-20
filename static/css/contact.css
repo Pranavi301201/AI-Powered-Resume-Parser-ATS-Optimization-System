@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0000;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    height:100px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 70px;
+
+    background:black;
+}
+
+/* Logo */
+
+.logo-section{
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    width:85px;
+    margin-right:15px;
+}
+
+.logo-section h1{
+    color:#b87412;
+    font-size:32px;
+}
+
+/* Nav */
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links li a:hover{
+    color:#b87412;
+}
+
+/* Contact Section */
+
+.contact-section{
+    width:100%;
+    min-height:calc(100vh - 100px);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:60px 80px;
+}
+
+/* Left Side */
+
+.contact-left{
+    width:45%;
+}
+
+.contact-left h2{
+    font-size:60px;
+    color:#b87412;
+    margin-bottom:25px;
+}
+
+.contact-left p{
+    font-size:20px;
+    line-height:1.8;
+    color:#dddddd;
+    margin-bottom:20px;
+}
+
+/* Contact Info */
+
+.contact-info{
+    margin-top:30px;
+}
+
+.contact-info p{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+/* Right Side */
+
+.contact-right{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+/* Card */
+
+.contact-card{
+    width:100%;
+    max-width:500px;
+
+    background:#1a0000;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 20px rgba(184,116,18,0.2);
+}
+
+.contact-card h3{
+    font-size:35px;
+    color:#b87412;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+/* Form */
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form textarea{
+    width:100%;
+
+    padding:16px;
+
+    margin-bottom:20px;
+
+    border:none;
+    outline:none;
+
+    border-radius:10px;
+
+    background:#f5f5f5;
+
+    font-size:16px;
+}
+
+textarea{
+    height:140px;
+    resize:none;
+}
+
+/* Button */
+
+button{
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#b87412;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#f0c36a;
+    color:black;
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+    .contact-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .contact-left,
+    .contact-right{
+        width:100%;
+    }
+
+    .contact-right{
+        margin-top:50px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+}

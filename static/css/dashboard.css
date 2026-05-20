@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0000;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    height:100px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 70px;
+
+    background:black;
+}
+
+/* Logo */
+
+.logo-section{
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    width:85px;
+    margin-right:15px;
+}
+
+.logo-section h1{
+    color:#b87412;
+    font-size:32px;
+}
+
+/* Nav */
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-links li a:hover{
+    color:#b87412;
+}
+
+/* Dashboard Section */
+.dashboard-section{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    gap:20px;
+}
+
+
+/* Welcome Card */
+
+.welcome-card{
+    width:700px;
+
+    background:#1a0000;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px rgba(184,116,18,0.2);
+
+    margin-bottom:0px;
+}
+
+.welcome-card h2{
+    font-size:42px;
+    color:#b87412;
+    margin-bottom:20px;
+}
+
+.welcome-card p{
+    font-size:20px;
+    color:#dddddd;
+    line-height:1.7;
+}
+
+/* Upload Card */
+
+.upload-card{
+    width:500px;
+
+    background:#1a0000;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px rgba(184,116,18,0.2);
+}
+
+.upload-card h3{
+    font-size:32px;
+    color:#b87412;
+    margin-bottom:30px;
+}
+
+/* File Input */
+
+input[type="file"]{
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:25px;
+
+    background:white;
+
+    border-radius:10px;
+
+    font-size:16px;
+}
+
+/* Button */
+
+button{
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#b87412;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#f0c36a;
+    color:black;
+}
+/* File Upload */
+
+.file-upload{
+    width:100%;
+    text-align:center;
+}
+
+#file-name{
+    margin-top:5px;
+    color:#dddddd;
+    font-size:16px;
+}
+/* Textarea */
+
+textarea{
+    width:100%;
+
+    height:180px;
+
+    padding:18px;
+
+    margin-bottom:25px;
+
+    border:none;
+
+    border-radius:12px;
+
+    outline:none;
+
+    resize:none;
+
+    font-size:16px;
+}
+/* Recruiter Button */
+
+.recruiter-btn{
+    margin-top:30px;
+}
+
+.recruiter-btn a{
+    text-decoration:none;
+
+    background:#b87412;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    transition:0.3s;
+}
+
+.recruiter-btn a:hover{
+    background:#f0c36a;
+
+    color:black;
+}

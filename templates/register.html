@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | RESUMEAI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+</head>
+<body>
+
+    <div class="register-container">
+
+        <!-- Left Side -->
+        <div class="left-section">
+
+            <img src="{{ url_for('static', filename='images/weblogo.png') }}" class="logo">
+
+            <h1>Join RESUMEAI</h1>
+
+            <p>
+                Create your account and start intelligent ATS resume analysis
+                powered by AI and NLP.
+            </p>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="right-section">
+
+            <div class="register-card">
+
+                <h2>Create Account</h2>
+
+                <form action="" method="POST">
+
+                    <div class="input-box">
+                        <input type="text" name="fullname" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    </div>
+
+                    <button type="submit">Register</button>
+
+                </form>
+
+                <div class="login-link">
+                    Already have an account?
+                    <a href="/login">Login</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

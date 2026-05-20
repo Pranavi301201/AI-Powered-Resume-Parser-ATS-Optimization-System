@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0000;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    height:100px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 70px;
+
+    background:black;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    width:85px;
+    margin-right:15px;
+}
+
+.logo-section h1{
+    color:#b87412;
+    font-size:32px;
+}
+
+/* Nav */
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-links li a:hover{
+    color:#b87412;
+}
+
+/* Main Section */
+
+.result-section{
+    padding:40px;
+}
+
+/* Score Card */
+
+.score-card{
+    width:400px;
+
+    margin:auto;
+
+    background:#1a0000;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px rgba(184,116,18,0.2);
+}
+
+.score-card h2{
+    color:#b87412;
+
+    font-size:40px;
+
+    margin-bottom:30px;
+}
+
+/* Score Circle */
+
+.score-circle{
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    background:#b87412;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:45px;
+    font-weight:bold;
+
+    color:white;
+}
+
+/* Skills Container */
+
+.skills-container{
+    margin-top:50px;
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+/* Skill Cards */
+
+.skills-card{
+    width:400px;
+
+    background:#1a0000;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 20px rgba(184,116,18,0.2);
+}
+
+.skills-card h3{
+    color:#b87412;
+
+    margin-bottom:25px;
+
+    font-size:30px;
+}
+
+.skills-card ul{
+    padding-left:20px;
+}
+
+.skills-card li{
+    margin-bottom:15px;
+
+    font-size:18px;
+
+    color:#dddddd;
+}

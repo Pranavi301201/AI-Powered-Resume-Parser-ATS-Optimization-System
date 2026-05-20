@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | RESUMEAI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <!-- Left Side -->
+        <div class="left-section">
+
+            <img src="{{ url_for('static', filename='images/weblogo.png') }}" alt="Logo" class="logo">
+
+            <h1>RESUMEAI</h1>
+
+            <p>
+                AI-Powered Resume Parser & ATS Optimization System
+            </p>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="right-section">
+
+            <div class="login-card">
+
+                <h2>Login</h2>
+
+                <form action="" method="POST">
+
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Enter Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="password" placeholder="Enter Password" required>
+                    </div>
+
+                    <button type="submit">Login</button>
+
+                </form>
+
+                <div class="register-link">
+                    Don't have an account?
+                    <a href="/register">Register</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

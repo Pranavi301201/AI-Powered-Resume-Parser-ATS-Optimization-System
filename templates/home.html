@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUMEAI | Home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+
+           <div class="logo-section">
+
+    <img src="{{ url_for('static', filename='images/weblogo.png') }}" class="logo">
+
+    <h1>RESUMEAI</h1>
+
+</div>
+
+            <!-- Navigation -->
+
+            <ul class="nav-links">
+
+                <li><a href="/">Home</a></li>
+
+                <li><a href="/contact">Contact</a></li>
+
+                <li><a href="/login">Login</a></li>
+
+                <li><a href="/register">Sign Up</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero-section">
+
+        <!-- Left Content -->
+
+        <div class="hero-left">
+
+            <h3>Welcome to RESUMEAI</h3>
+
+            <h1>
+AI-Powered Resume Parser <br>
+& ATS Optimization System
+</h1>
+
+            <p>
+                Analyze resumes intelligently using Artificial Intelligence,
+                NLP, and ATS optimization techniques.
+                Upload resumes, compare candidates,
+                and rank applicants automatically.
+            </p>
+
+            <!-- Buttons -->
+
+            <div class="hero-buttons">
+
+                <a href="/register">
+                    <button class="primary-btn">
+                        Get Started
+                    </button>
+                </a>
+
+                <a href="/login">
+                    <button class="secondary-btn">
+                        Login
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Right Image -->
+
+        <div class="hero-right">
+
+            <img src="{{ url_for('static', filename='images/homeback.jpg') }}">
+
+        </div>
+
+    </section>
+
+</body>
+</html>

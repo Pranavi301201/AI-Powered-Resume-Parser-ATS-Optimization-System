@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Candidate Ranking | RESUMEAI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/ranking.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo-section">
+
+            <img src="{{ url_for('static',
+                 filename='images/weblogo.png') }}"
+                 class="logo">
+
+            <h1>RESUMEAI</h1>
+
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/home">Home</a></li>
+
+            <li><a href="/dashboard">Dashboard</a></li>
+
+            <li><a href="/logout">Logout</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Ranking Section -->
+
+    <section class="ranking-section">
+
+        <h2>Top Ranked Candidates</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Rank</th>
+
+                <th>Resume</th>
+
+                <th>ATS Score</th>
+
+                <th>Matched Skills</th>
+
+            </tr>
+
+            {% for result in results %}
+
+            <tr>
+
+                <td>{{ loop.index }}</td>
+
+                <td>{{ result.filename }}</td>
+
+                <td>{{ result.score }}%</td>
+
+                <td>
+
+                    {% for skill in result.skills %}
+
+                        {{ skill }},
+
+                    {% endfor %}
+
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </section>
+
+</body>
+</html>

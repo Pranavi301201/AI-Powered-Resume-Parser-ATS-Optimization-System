@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ATS Result | RESUMEAI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/ats_result.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo-section">
+
+            <img src="{{ url_for('static',
+                 filename='images/weblogo.png') }}"
+                 class="logo">
+
+            <h1>RESUMEAI</h1>
+
+        </div>
+
+        <ul class="nav-links">
+             <li><a href="/home">Home</a></li>
+
+            <li><a href="/dashboard">Dashboard</a></li>
+
+            <li><a href="/logout">Logout</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Main -->
+
+    <section class="result-section">
+
+        <!-- Score Card -->
+
+        <div class="score-card">
+
+            <h2>ATS Score</h2>
+
+            <div class="score-circle">
+                {{ score }}%
+            </div>
+
+        </div>
+
+        <!-- Skills -->
+
+        <div class="skills-container">
+
+            <!-- Matched -->
+
+            <div class="skills-card">
+
+                <h3>Matched Skills</h3>
+
+                <ul>
+
+                    {% for skill in matched %}
+
+                    <li>{{ skill }}</li>
+
+                    {% endfor %}
+
+                </ul>
+
+            </div>
+
+            <!-- Missing -->
+
+            <div class="skills-card">
+
+                <h3>Missing Skills</h3>
+
+                <ul>
+
+                    {% for skill in missing %}
+
+                    <li>{{ skill }}</li>
+
+                    {% endfor %}
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

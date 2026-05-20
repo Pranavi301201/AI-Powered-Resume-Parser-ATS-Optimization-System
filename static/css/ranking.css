@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0000;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    height:100px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 70px;
+
+    background:black;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    width:85px;
+    margin-right:15px;
+}
+
+.logo-section h1{
+    color:#b87412;
+    font-size:32px;
+}
+
+/* Nav */
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-links li a:hover{
+    color:#b87412;
+}
+
+/* Main */
+
+.ranking-section{
+    padding:50px;
+}
+
+.ranking-section h2{
+    text-align:center;
+
+    font-size:45px;
+
+    color:#b87412;
+
+    margin-bottom:40px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#1a0000;
+
+    border-radius:15px;
+
+    overflow:hidden;
+}
+
+/* Headings */
+
+th{
+    background:#b87412;
+
+    color:white;
+
+    padding:18px;
+
+    font-size:20px;
+}
+
+/* Table Data */
+
+td{
+    padding:18px;
+
+    border-bottom:1px solid #333;
+
+    text-align:center;
+
+    font-size:17px;
+
+    color:#dddddd;
+}
+
+tr:hover{
+    background:#250000;
+}
